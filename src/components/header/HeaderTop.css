@@ -1,0 +1,78 @@
+.HeaderTop {
+    margin: 0 auto;
+    text-align: right;
+    padding: 10px 10px 10px 0;
+    height: 41px;
+}
+
+.HeaderTop a {
+    font-size: 0.840rem;
+    font-weight: 300;
+    margin-right: 20px;
+    white-space: nowrap;
+}
+
+#lang-box {
+    display: inline-block;
+    border: none;
+    outline: #00b894 solid 0.125rem;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 0.125rem 0.313rem;
+    width: 3.3rem;
+    position: relative;
+    height: 100%;
+    user-select: none;
+    font-size: 0.813rem;
+    font-weight: 300;
+    text-align: start;
+}
+
+.dropdown-icon {
+    position: absolute;
+    font-size: 20px;
+    top: 0;
+    font-weight: 900;
+}
+
+.list_lang {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    height: 4.7rem;
+    width: 4rem;
+    background: #fff;
+    border: 1px solid #00b894;
+    top: 2.3rem;
+    padding: 0.25rem;
+    left: -7px;
+    z-index: 30;
+    user-select: none;
+}
+
+.list_lang a {
+    display: flex;
+    width: 100%;
+    padding: 0.063rem;
+    font-size: 0.813rem;
+    color: #2d3436;
+    font-weight: 400;
+}
+
+.list_lang a:hover {
+    background: #00b894;
+}
+
+.active {
+    background: #00b894;
+}
+
+
+/*______________responsive_______________*/
+
+
+@media (max-width: 991px) {
+    .HeaderTop {
+        display: none;
+    }
+}

@@ -1,0 +1,89 @@
+.HeaderLow {
+    position: relative;
+    width: 100%;
+    white-space: nowrap;
+    background: linear-gradient(to right, #018066, #55efc4);
+}
+
+.HeaderLow-container {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.HeaderLow-container ul {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+
+    li {
+        font-size: 18px;
+        position: relative;
+    }
+
+    a {
+        display: block;
+        height: 66px;
+        padding: 20px 5px;
+        color: rgb(252, 252, 252);
+        font-size: clamp(1rem, 2vw, 1.25rem);
+        font-weight: 450;
+    }
+
+    a:hover {
+        color: #a4f8e0;
+    }
+}
+
+.sale-first {
+    position: relative;
+}
+
+.discount-sign-first {
+    position: absolute;
+    top: -0.1rem;
+    font-size: clamp(0.655rem, 2vw, 0.938rem);
+    background: red;
+    padding: 0.063rem 0.625rem 0.063rem 0.625rem;
+    border-radius: 15px;
+    scale: 0.63;
+    font-weight: 600;
+    color: #fff;
+    left: 2.3rem;
+}
+
+.sale-second {
+    position: relative;
+}
+
+.discount-sign-second {
+    position: absolute;
+    top: -0.1rem;
+    font-size: clamp(0.655rem, 2vw, 0.938rem);
+    background: red;
+    padding: 1px 10px 1px 10px;
+    border-radius: 15px;
+    scale: 0.63;
+    font-weight: 600;
+    color: #fff;
+    right: -1.25rem;
+}
+
+
+/*______________responsive_______________*/
+
+
+@media (max-width:1200px) {
+    .HeaderLow-container {
+        padding: 0 20px;
+    }
+}
+
+@media (max-width: 991px) {
+    .HeaderLow {
+        display: none;
+    }
+}

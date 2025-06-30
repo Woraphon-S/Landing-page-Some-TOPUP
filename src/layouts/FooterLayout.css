@@ -1,0 +1,9 @@
+.Footer {
+    position: relative;
+    clear: both;
+    box-sizing: border-box;
+    min-height: 240px;
+    border: 1px solid #e7e7e7;
+    background-color: #c8ffef;
+    width: 100%;
+}

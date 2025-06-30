@@ -1,0 +1,244 @@
+.ft-info-wrap {
+    margin-bottom: 30px;
+    font-size: 12px;
+    word-break: keep-all;
+}
+
+.coppyright {
+    max-width: 1200px;
+    margin: 5px auto;
+    font-size: 13px;
+}
+
+.FooterContainer {
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.logo-div {
+    margin-bottom: 15px;
+
+    .Logo {
+        font-weight: 700;
+        color: #00b894;
+        font-size: 1.563rem;
+        user-select: none;
+        width: 140px;
+        display: flex;
+        justify-content: left;
+    }
+}
+
+.textwrap {
+    p {
+        font-weight: 400;
+        color: #333;
+        font-size: 0.680rem;
+    }
+}
+
+/* .....................................Services...............................................*/
+
+.Services-Wrapper {
+    display: flex;
+    width: calc(100% - 60px);
+    width: 100%;
+}
+
+.Service-lists {
+    flex: auto;
+    display: inline-block;
+
+    a {
+        font-size: 12px;
+        display: inline-block;
+        padding: 0 15px;
+        text-align: center;
+        font-weight: 400;
+        border-right: 1px solid rgba(0, 0, 0, 0.3);
+    }
+}
+
+.Pay-method {
+    margin-right: 10rem;
+
+    h5 {
+        margin-bottom: 20px;
+        transform: translateY(5px);
+        color: #333;
+        font-size: 12px;
+        font-weight: 400;
+        white-space: nowrap;
+    }
+
+    .ul-wrap {
+        width: 100%;
+        text-align: left;
+
+        ul {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            width: 130px;
+            gap: 1px;
+            list-style: none;
+
+            li {
+                margin: 0 6px 5px;
+                text-align: center;
+            }
+        }
+
+
+        img {
+            border: 0;
+            vertical-align: top;
+            width: 20px;
+            height: 20px;
+            aspect-ratio: auto 20 / 20;
+            overflow: clip;
+            text-align: center;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    }
+}
+
+.follow_us {
+    flex: auto;
+    vertical-align: top;
+
+    h5 {
+        font-size: 13px;
+        margin-bottom: 20px;
+        transform: translateY(5px);
+        font-size: 12px;
+        font-weight: 400;
+    }
+
+    .social-icons {
+        display: flex;
+
+        a {
+            width: 22px;
+            height: 25px;
+            margin: 0 3px;
+            font-size: 1.1em;
+        }
+    }
+}
+
+.eng-text {
+    font-weight: 500;
+}
+
+.right-wrapper {
+    display: flex;
+}
+
+.footer-bar {
+    display: none;
+    max-width: 1200px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    background-color: #fff;
+    z-index: 999;
+    margin: 0 auto;
+    height: 4rem;
+    border-top: 3px solid rgba(0, 184, 148, 0.3);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+
+    .ul-wrap {
+        height: 100%;
+        align-items: center;
+        width: 100%;
+        justify-content: space-around;
+        display: flex;
+
+        li {
+            display: flex;
+            cursor: pointer;
+
+            div {
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+            }
+
+            i {
+                font-size: 18px;
+            }
+
+            i:hover {
+                color: #00b894;
+            }
+
+            a {
+                font-size: 16px;
+                user-select: none;
+            }
+        }
+
+        li:active {
+            scale: 0.95;
+        }
+    }
+}
+
+.active-footer {
+    color: #00b894;
+    background: transparent;
+}
+
+/*______________responsive_______________*/
+
+
+@media (max-width:1200px) {
+
+    .FooterContainer,
+    .coppyright {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+@media (max-width:1051px) {
+    .FooterContainer {
+        padding-bottom: 20px;
+    }
+
+    .Service-lists {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        a {
+            white-space: nowrap;
+            text-align: left;
+            border-right: none;
+            width: 130px;
+            text-align: left;
+        }
+    }
+
+    .right-wrapper {
+        display: flex;
+        flex-direction: column;
+        margin-left: 4rem;
+        padding-bottom: 4rem;
+    }
+
+    .coppyright {
+        display: none;
+    }
+
+    .footer-bar {
+        display: block;
+    }
+}

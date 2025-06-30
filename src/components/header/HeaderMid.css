@@ -1,0 +1,202 @@
+.HeaderMid {
+    position: relative;
+    padding: 0 0 28px;
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+}
+
+.HeaderMid {
+    white-space: nowrap;
+    color: #2d3436;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.search-bar-wrap {
+    display: flex;
+    flex: 1;
+    align-items: center;
+}
+
+.Logo {
+    font-weight: 700;
+    color: #00b894;
+    font-size: 1.563rem;
+    user-select: none;
+    width: 140px;
+    display: flex;
+    justify-content: left;
+}
+
+.search_bar_area {
+    position: relative;
+    width: 70%;
+    margin-left: 40px;
+}
+
+.search-bar {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    width: 100%;
+    height: 58px;
+    border-radius: 58px;
+    outline: 0.125rem solid #00b894;
+}
+
+.search-bar input {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    font-size: 18px;
+    height: 100%;
+    border: none;
+    color: #333;
+    border-radius: 58px;
+    width: 93%;
+    outline: none;
+}
+
+:placeholder-shown {
+    user-select: none;
+}
+
+.search-icon {
+    position: absolute;
+    right: 1rem;
+    font-size: 1.75rem;
+    top: 0.7rem;
+    cursor: pointer;
+    color: #00b894;
+}
+
+.righ-bar {
+    align-self: flex-end;
+    display: flex;
+}
+
+.auth-tag {
+    white-space: nowrap;
+    display: flex;
+
+    a {
+        display: block;
+        margin-right: 10px;
+        font-size: 0.840rem;
+        font-weight: 300;
+        color: #333;
+    }
+}
+
+.social-icons {
+    i {
+        width: 22px;
+        height: 22px;
+        margin: 0 3px;
+        vertical-align: middle;
+        font-size: 1.2rem;
+        cursor: pointer;
+    }
+}
+
+.hamurger-menu {
+    position: absolute;
+    align-items: center;
+    left: 2rem;
+    top: 1.5rem;
+    display: flex;
+
+    .ham-icon,
+    .x-icon {
+        position: absolute;
+        font-size: 30px;
+        font-weight: 600;
+        cursor: pointer;
+    }
+
+    :active {
+        scale: 0.98;
+    }
+
+    .show-toggle {
+        display: none;
+    }
+}
+
+
+
+.Login-btn {
+    position: absolute;
+    right: 2rem;
+    top: 1rem;
+    display: none;
+
+    button {
+        border: none;
+        background: #00b894;
+        color: #fff;
+        font-size: 15px;
+        padding: 10px;
+        border-radius: 5px;
+        cursor: pointer;
+        outline: none;
+        user-select: none;
+    }
+
+    button:active {
+        scale: 0.96;
+    }
+}
+
+
+/*______________responsive_______________*/
+
+
+@media (max-width:1200px) {
+    .HeaderMid {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+@media (max-width: 991px) {
+    .HeaderMid {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .Logo {
+        width: 140px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .search-bar-wrap {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .search_bar_area {
+        margin: 0;
+        padding: 1rem 1rem 0 1rem;
+        width: 100%;
+    }
+
+    .righ-bar {
+        display: none;
+    }
+
+    .hamurger-menu,
+    .Login-btn {
+        display: block;
+    }
+}
+
+@media (min-width: 992px) {
+
+    .hamurger-menu,
+    .Login-btn {
+        display: none;
+    }
+}
